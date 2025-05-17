@@ -1,23 +1,59 @@
 @font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto/static/Roboto-Thin.ttf);
-    font-style: normal;
-    font-weight: 100;
+  font-family: roboto;
+  src: url(../fonts/Roboto/static/Roboto-Thin.ttf);
+  font-style: normal;
+  font-weight: 100;
 }
 @font-face {
-    font-family: montser;
-    src: url(../fonts/Montserrat/static/Montserrat-Thin.ttf);
-    font-style: normal;
-    font-weight: 100;
+  font-family: montser;
+  src: url(../fonts/Montserrat/static/Montserrat-Thin.ttf);
+  font-style: normal;
+  font-weight: 100;
 }
 
 /* variables */
-:root{
-    --robotoFont: roboto;
-    --montserFont: montser;
-    --textColor: #343434;
-    --mainColor: #1C1C1C;
-    --secondaryColor: #5B5B5B;
+:root {
+  --robotoFont: roboto;
+  --montserFont: montser;
+  --textColor: #343434;
+  --mainColor: #1c1c1c;
+  --secondaryColor: #5b5b5b;
 }
 
 /* classes */
+
+/* start nav */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  border-bottom: 2px solid white;
+}
+.navbar-nav {
+  --bs-nav-link-padding-y: 0;
+}
+.navbar {
+  --bs-navbar-nav-link-padding-x: 0;
+  --bs-navbar-nav-link-padding-y: 0;
+}
+
+
+/* end nav */
+
+/* start header */
+
+#header {
+  height: 500px;
+}
+
+#about {
+  height: 500px;
+}
+/* end header */
+
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--textColor);
+    background-color: transparent;
+    border-bottom: white solid 2px;
+    border-radius: 0;
+    transition: all 0.5s;
+} */
