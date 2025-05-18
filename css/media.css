@@ -1,0 +1,45 @@
+@media screen and (max-width: 991px) {
+  /*! nav */
+  .navbar-collapse {
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: #fff;
+  }
+
+  /* nav bar color */
+  .navbar-collapse .nav-item .nav-link {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+      /* animation font size */
+      .text-mob-size {
+      font-family: var(--montserFont);
+      font-size: 40px;
+      line-height: 72px;
+      padding: 12px 0;
+      font-weight: 200;
+    }
+}
+
+
+@media screen and (min-width: 991px) {
+    /*! nav */
+    /* nav menu collor */
+    .navbar-collapse .nav-item .nav-link {
+        color: white;
+    }
+
+    /*! header */
+    /* animation font size */
+    .text-mob-size {
+      font-family: var(--montserFont);
+      font-size: 60px;
+      line-height: 72px;
+      padding: 12px 0;
+      font-weight: 200;
+    }
+}
+

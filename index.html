@@ -17,14 +17,15 @@
   <body
     data-bs-spy="scroll"
     data-bs-target="#nav"
+    data-bs-target="#main"
     data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true"
     class="scrollspy-example bg-body-tertiary rounded-2"
     tabindex="0"
   >
-    <nav id="nav" class="navbar navbar-expand-lg bg-transparent fixed-top pt-4">
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand text-white" href="#header">Glory</a>
+        <a class="navbar-brand text-white" href="#header">GLORY</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,45 +35,40 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa-solid fa-bars text-white"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link mx-3 text-center text-white active"
+                class="nav-link mx-3 text-center my-2 active"
                 aria-current="page"
                 href="#header"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3 text-center text-white" href="#about"
-                >About</a
-              >
+              <a class="nav-link mx-3 text-center my-2" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3 text-center text-white" href="#services"
+              <a class="nav-link mx-3 text-center my-2" href="#services"
                 >Services</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3 text-center text-white" href="#works"
-                >Works</a
-              >
+              <a class="nav-link mx-3 text-center my-2" href="#works">Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3 text-center text-white" href="#clients"
+              <a class="nav-link mx-3 text-center my-2" href="#clients"
                 >Clients</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3 text-center text-white" href="#team"
-                >Team</a
-              >
+              <a class="nav-link mx-3 text-center my-2" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3 text-center text-white" href="#contact"
+              <a class="nav-link mx-3 text-center my-2" href="#contact"
                 >Contact</a
               >
             </li>
@@ -80,34 +76,80 @@
         </div>
       </div>
     </nav>
-    <header id="header" class="min-vh-100 d-flex justify-content-center align-items-center position-relative">
+    <header
+      id="header"
+      class="min-vh-100 d-flex justify-content-center align-items-center position-relative"
+    >
+      <div class="down-animiation"></div>
+      <div class="up-animiation"></div>
       <div class="container">
         <div class="inner-header text-white text-center position-relative">
           <h1>Hello</h1>
-          <p>I Am <strong></strong></p>
-          <ul class="social-links d-flex justify-content-center align-items-center ">
+          <p class="text-mob-size m-auto">
+            I'M <strong class="auto-type"></strong>
+          </p>
+          <ul
+            class="social-links d-flex justify-content-center align-items-center"
+          >
             <li>
-              <a href="#"><i class="fa-brands fa-github text-white px-3"></i></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-github text-white rounded-circle p-2 mx-1"
+                ></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-whatsapp text-white px-3"></i></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-whatsapp text-white rounded-circle p-2 mx-1"
+                ></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in text-white px-3"></i></a>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-linkedin-in text-white rounded-circle p-2 mx-1"
+                ></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-at text-white px-3"></i></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-at text-white rounded-circle p-2 mx-1"
+                ></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-phone text-white px-3"></i></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-phone text-white rounded-circle p-2 mx-1"
+                ></i
+              ></a>
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <main></main>
+    <main id="main">
+      <div class="container">
+        <section id="about">
+          <div class="about-img">
+            <img src="imgs/hero.jpg" alt="hero img">
+          </div>
+        </section>
+      </div>
+    </main>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["AMJAD SALAH", "A UI DEVELOPER", "A JR FRONTEND DEVELOPER"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
