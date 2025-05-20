@@ -7,9 +7,22 @@
   }
 
   /* nav bar color */
-  .navbar-collapse .nav-item .nav-link {
+  .nav-item .nav-link {
     color: black;
   }
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+  border-color: black;
+}
+
+  /* heading style */
+  .section-heading-style h3 {
+  position: relative;
+  font-family: var(--montserFont);
+  font-size: 20px;
+  line-height: 44px;
+  font-weight: 900;
+  z-index: 2;
+}
 }
 
 @media screen and (min-width: 768px) {
